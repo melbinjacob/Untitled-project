@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+:root{
+    --bg-clr: #222;
+    --fg-clor: #00f070;
+    --w-: #effff6;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-clr);
+    color: var(--fg-clor);
+    font-family:'Josefin Sans', sans-serif;;
+}
+#project-bio-top{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 5vh auto 15px auto;
+    letter-spacing: 16px;
+    animation: colo linear 10s infinite;
+}
+#project-name{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bolder;
+    animation: colo 3s linear infinite;
+    margin: 0 auto 0 auto;
+}
+#project-bio-bottom{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    animation: colo 3s linear infinite;
+    margin: 0 auto 60px auto;
+}
+.crew-div{
+    display: flex;
+    background-color: #444;
+    width: 60%;
+    height: 15vh;
+    margin: 0 auto 80px auto;
+    justify-content: space-between;
+}
+.round{
+    width: 15vh;
+    height: auto;
+    background-color: #444;
+    border-radius: 0 50% 50% 0;
+    justify-content: flex-end;
+    margin-right: -65px;
+    z-index: -1;
+}
+.round-img{
+    width:  auto;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid #00f070;
+    margin-left: -65px;
+    animation: roun 3s linear infinite;
+
+}
+.assignment-title{
+    text-align: center;
+    margin-bottom: 50px;
+    animation: colo linear 10s infinite;
+}
+.list{
+    font-size: 24px;
+    width: 60%;
+    margin: 0 auto -100px 25%;
+    color: var(--w-);
+    z-index: 2;
+}
+li{
+    margin-top: 5px;
+}
+
+@keyframes colo{
+    0%{
+        color: #00f070;
+    }
+    50%{
+        color: #00f0c4;
+    }
+    100%{
+        color: #00f070;
+    }
+}
+@keyframes roun{
+    0%{
+        border: 10px solid #444;
+    }
+    50%{
+        border: 10px solid #888;
+    }
+    100%{
+        border: 10px solid #444;
+    }
+}
+@media screen and (max-width: 650px) {
+    
+    #project-bio-top{
+        font-size: 14px;
+        letter-spacing: 8px;
+        margin-bottom: 8px;
+    }
+    #project-name{
+        font-size: 54px;
+    }
+    #project-bio-bottom{
+        font-size: 14px;
+        margin: 0 auto 60px auto;
+    }
+    .list{
+        font-size: 14px;
+        width: 50%;
+        margin-left: 120px;
+    }
+}
